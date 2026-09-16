@@ -1,11 +1,11 @@
-public class Cuenta {
+ public class Cuenta {
   
   //Atributos
-  private final int cedula;
-  private final String nombre;
-  private final String numeroCuenta;
-  private final String tipoCuenta;
-  private final double saldo;
+  private int cedula;
+  private String nombre;  
+  private String numeroCuenta;                    
+  private String tipoCuenta;
+  private double saldo;
   
   //El constructor de la clase permite inicializar la clase
   //El constructor de la clase se reconoce porque tiene el mismo nombre de la clase
@@ -17,11 +17,18 @@ public class Cuenta {
     this.saldo = saldo;
   }
   
-  @Override
   public String toString(){
     return "Cuenta [ cedula:" + cedula + " nombre: " + nombre + " numerocuenta: " + numeroCuenta + 
                      " tipoCuenta: " + tipoCuenta + " saldo: " + saldo + "]";
   }
-  
-} 
    
+  //Creación del método recargar
+  public void recargarCuenta(double cantidad){
+    saldo += cantidad;
+  }
+  public void retirarCuenta(double cantidad){
+    saldo -= cantidad;
+  }
+
+   
+}  
