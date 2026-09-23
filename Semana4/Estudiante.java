@@ -26,4 +26,8 @@ public class Estudiante {
     return "Estudiante [ id: " + id + " nombre: " + nombre + 
                      " curso: " + curso + " nota1: " + nota1 + " nota2: " + nota2 +" nota3: " + nota3 + "]";
   }  
+  public boolean aprobo() {
+        return calcularPromedio() >= 3.0;
+    }
+    
 }    
