@@ -29,5 +29,10 @@ public class Estudiante {
   public boolean aprobo() {
         return calcularPromedio() >= 3.0;
     }
+
+  public void mostrarInformacion() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'mostrarInformacion'");
+  }
     
 }    
