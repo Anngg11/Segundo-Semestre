@@ -36,6 +36,10 @@ class Producto {
         calcularInventario();
     }
 
+    public Producto(int numero, double precio) {
+        //TODO Auto-generated constructor stub
+    }
+
     public void calcularInventario() {
         valorInventario = precioUnitario * stock;
     }
